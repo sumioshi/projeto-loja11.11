@@ -1,0 +1,155 @@
+
+body {
+    font-family: 'Arvo', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.about-store {
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;   
+}
+
+.about-store .line {
+    border-top: 1px solid #ccc;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.about-store h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-store p {
+    font-size: 16px;
+}
+
+/* ---- */
+
+.about-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.store-image img {
+    width: 300px;
+    height: auto;
+}
+
+.store-info {
+    max-width: 60%;
+    text-align: justify;
+}
+
+.products-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.product {
+    width: 45%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 30%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.add-to-cart {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Desktop 1024px */ 
+@media screen and (min-width: 1024px) {
+    .product {
+        width: 22%;
+    }
+
+    .about-store {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .about-store .about-image {
+        max-width: 100%;
+        margin-bottom: 1px;
+        
+    }
+
+    .about-store h2 {
+        font-size: 28px;
+    }
+
+    .about-store p {
+        font-size: 18px;
+    }
+}
+
+
+
+/* Tablet 641px até 1023px */
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .product {
+        width: 40%;
+    }
+
+    .about-store .about-image {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .about-store h2 {
+        font-size: 24px;
+    }
+
+    .about-store p {
+        font-size: 16px;
+    }
+}
+
+/* Mobile (até 640px) */ 
+@media screen and (max-width: 640px) {
+    .product {
+        width: 100%;
+    }
+
+    .about-store .about-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-store h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .about-store p {
+        font-size: 14px;
+    }
+
+}
